@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MillyForCoffe</title>
+    <link rel="stylesheet" href="CoffeeCompany.css">
+    <script type="text/javascript">
+      function dosomething(element) {
+        document.getElementById('1').innerHTML=element.innerHTML;
+         x=document.getElementById('1');
+        x.style.backgroundColor='#d17629';
+        x.style.color='#fff';
+      }
+      function dos() {
+        document.getElementById('1').style.backgroundColor='#fff';
+        document.getElementById('1').style.color='#d17629';
+      }
+    </script>
+    <script type="text/javascript" src="CoffeeCompany.js" async>
+    </script>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+</style>
+  </head>
+  <body onscroll="scollfun();">
+    <header>
+      <nav id="nav">
+          <img src="C:\Users\mosta\Downloads\coffee-logo-png-7502.png" alt="CoffeLogo">
+          <h1 id="mm">M&M for coffee</h1>
+        <div class="">
+
+        <a href="#" onmouseover="dosomething(this)" onmouseout="dos()">Home</a>
+        <a href="#search" onmouseover="dosomething(this)" onmouseout="dos()"  >Search</a>
+        <a href="#" onmouseover="dosomething(this)" onmouseout="dos()">Order</a>
+        <a href="#12" onmouseover="dosomething(this)" onmouseout="dos()">About</a>
+
+      </div>
+      </nav>
+      <h1>M&M Company</h1>
+      <a href="#" id="1">Order Now</a>
+    </header>
+    <section class="center">
+      <p>free coffee for <span id="n">5</span> days <span id="e">|</span> orderNow </p>
+    </section>
+    <section class="left" id="12">
+      <img src="https://cdn.lifestyleasia.com/wp-content/uploads/2017/06/25095816/1Q4A9096.jpg" alt="">
+      <h1>About <span>Us</span></h1>
+      <p>A coffee company interested in providing the best coffee in Syria and the Arab world</p>
+    </section>
+    <div id="search">
+      <h1>Our <span>Store</span></h1>
+      <div class="choose">
+        <a  onclick="DisplayAllItems();">All</a>
+        <a onclick="DisplayItems(this);">Chocolate</a>
+        <a onclick="DisplayItems(this);">special</a>
+        <a onclick="DisplayItems(this);">Mocha</a>
+      </div>
+      <br>
+      <a class="icon"> <img  src="https://img.icons8.com/color/48/000000/search.png"/> </a>
+      <input id="searchbox" type="text" name="" value="" placeholder="Name of favourite coffee" onkeyup="SearchDisplay();">
+      <br>
+      <div id="container">
+      <div>
+        <img src="https://i2.wp.com/buythiscookthat.com/wp-content/uploads/2018/08/Milk-n-Honey-Hot-Coffee-8-1.jpg" alt="coffee with milk">
+        <a href="#"><img src="https://img.icons8.com/office/16/000000/shop.png"/> </a>
+        <p>coffee with milk</p>
+      </div>
+      <div>
+        <img src="https://pictures.brafton.com/x_0_0_0_14119372_800.jpg" alt="">
+        <a href="#"> <img src="https://img.icons8.com/office/16/000000/shop.png"/> </a>
+        <p>coffee with chocolate</p>
+      </div>
+      <div>
+        <img src="https://www.wholesalecoffeecompany.co.uk/wp-content/uploads/2013/07/chocolate_and_coffee_wallpaper_fce8c.jpg" alt="">
+        <a href="#"> <img src="https://img.icons8.com/office/16/000000/shop.png"/> </a>
+        <p>special coffee</p>
+      </div>
+      <div>
+        <img src="https://deliciousmadeeasy.com/wp-content/uploads/2018/04/chocoholic-cold-brew-coffee-1-of-1-7-720x720.jpg" alt="">
+        <a href="#"> <img src="https://img.icons8.com/office/16/000000/shop.png"/> </a>
+        <p>Iced coffee</p>
+      </div>
+      <div>
+        <img src="https://freedesignfile.com/upload/2018/02/Coffee-with-chocolate-chip-cookie-and-coffee-beans-Stock-Photo.jpg" alt="">
+        <a href="#"> <img src="https://img.icons8.com/office/16/000000/shop.png"/> </a>
+        <p>cookies with coffee</p>
+      </div>
+      <div>
+        <img src="https://lemonsandzest.com/wp-content/uploads/2018/08/Peanut-Butter-Mocha-Smoothie-12.jpg" alt="">
+        <a href="#"> <img src="https://img.icons8.com/office/16/000000/shop.png"/> </a>
+        <p>
+Peanut Butter Mocha Smoothie‏
+</p>
+      </div>
+      <div>
+        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-triple-coffee-cheesecake-horizontal-1530559428.jpg" alt="">
+        <a href="#"> <img src="https://img.icons8.com/office/16/000000/shop.png"/> </a>
+        <p>
+Triple Coffee Cheesecake‏
+</p>
+      </div>
+      <div>
+        <img src="https://www.onceuponachef.com/images/2017/05/Sour-Cream-Chocolate-Chip-Coffee-Cake-2-760x490.jpg" alt="">
+        <a href="#"> <img src="https://img.icons8.com/office/16/000000/shop.png"/> </a>
+        <p>
+Cream Chocolate Chip Coffee Cake‏
+</p>
+      </div>
+      <div>
+        <img src="https://www.cravingsofalunatic.com/wp-content/uploads/2016/07/Caramel-Macchiato-Iced-Coffee-Chocolate-Milkshake-5-768x1152.jpg" alt="">
+        <a href="#"> <img src="https://img.icons8.com/office/16/000000/shop.png"/> </a>
+        <p>caramel macchiato iced coffee</p>
+      </div>
+      <div>
+        <img src="https://www.runningtothekitchen.com/wp-content/uploads/2014/06/Blended-chocolate-coconut-iced-coffee-3.jpg" alt="">
+        <a href="#"> <img src="https://img.icons8.com/office/16/000000/shop.png"/> </a>
+        <p>
+Blended Chocolate Coconut Iced Coffee‏‏</p>
+      </div>
+      <div>
+        <img src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe/recipe-image/2019/08/chocolate_biscuits.jpg?itok=blSgom2z" alt="">
+        <a href="#"> <img src="https://img.icons8.com/office/16/000000/shop.png"/> </a>
+        <p>
+Chocolate fudge crinkle biscuits‏</p>
+    </div>
+
+  </div>
+<footer>
+<p>MostafaMillyForCoffee &copy</p>
+</footer>
+  </body>
+</html>
